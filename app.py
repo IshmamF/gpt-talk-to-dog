@@ -11,7 +11,7 @@ CHANNELS = 1 if sys.platform == 'darwin' else 2
 RATE = 44100
 
 config = dotenv_values('.env')
-openai.api_key = config["OPENAI_KEY"]
+openai.api_key = config["GPT_KEY"]
 
 def record_audio(seconds: int):
     output_path = "output.wav"
