@@ -43,4 +43,31 @@ translation = openai.audio.translations.create(
         file=Path(speech_file_path),
     )
 
-print(translation.text)
+
+import time
+import pygame
+
+def not_streamed(input_text, model='tts-1', voice='alloy'):
+    start_time = time.time()
+
+    # Initialize Pygame Mixer
+    pygame.mixer.init()
+
+    response = openai.audio.speech.create(
+        model=model, 
+        voice=voice,
+        input=input_text,
+    )
+
+    response.stream_to_file("output.opus")
+
+    # Load and play the audio file
+    pygame.mixer.music.load('output.opus')
+    print(f"Time to play: {time.time() - start_time} seconds")
+    pygame.mixer.music.play()
+
+    # Loop to keep the script running during playback
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
+
+not_streamed(translation.text)
