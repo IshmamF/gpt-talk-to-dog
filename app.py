@@ -10,12 +10,12 @@ openai.api_key = config["GPT_KEY"]
 speech_file_path = record_audio(5)
 
 translation = openai.audio.translations.create(
-        model="whisper-1",
-        file=Path(speech_file_path),
-    )
+     model="whisper-1",
+    file=Path(speech_file_path),
+)
 
 
-gpt_response = openai.chat.completions.create(
+gpt_response = openai.chat.completions.create( #input transcribed text as GPT prompt
     model="gpt-3.5-turbo",
     messages=[{
         "role": "system",
