@@ -4,6 +4,7 @@ import sys
 import pyaudio
 from pathlib import Path
 import openai
+from src.utils.toSpeech import speak
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -11,7 +12,7 @@ CHANNELS = 1 if sys.platform == 'darwin' else 2
 RATE = 44100
 
 config = dotenv_values('.env')
-openai.api_key = config["OPENAI_KEY"]
+openai.api_key = config["GPT_KEY"]
 
 def record_audio(seconds: int):
     output_path = "output.wav"
@@ -43,31 +44,4 @@ translation = openai.audio.translations.create(
         file=Path(speech_file_path),
     )
 
-
-import time
-import pygame
-
-def not_streamed(input_text, model='tts-1', voice='alloy'):
-    start_time = time.time()
-
-    # Initialize Pygame Mixer
-    pygame.mixer.init()
-
-    response = openai.audio.speech.create(
-        model=model, 
-        voice=voice,
-        input=input_text,
-    )
-
-    response.stream_to_file("output.opus")
-
-    # Load and play the audio file
-    pygame.mixer.music.load('output.opus')
-    print(f"Time to play: {time.time() - start_time} seconds")
-    pygame.mixer.music.play()
-
-    # Loop to keep the script running during playback
-    while pygame.mixer.music.get_busy():
-        pygame.time.Clock().tick(10)
-
-not_streamed(translation.text)
+speak(translation)
