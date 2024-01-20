@@ -32,5 +32,6 @@ def speak(txt_input, model='tts-1-hd', voice='onyx'):
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick(10)
 
-
+if __name__== "__main__":
+    speak("Hello my name is Onyx, it's a pleasure to be working with you!")
 

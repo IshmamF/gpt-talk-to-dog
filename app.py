@@ -44,4 +44,4 @@ translation = openai.audio.translations.create(
         file=Path(speech_file_path),
     )
 
-speak(translation)
+speak(translation.__getattribute__('text')) #get the string data from the translation object
