@@ -7,7 +7,7 @@ from src.utils.toText import record_audio
 config = dotenv_values('.env')
 openai.api_key = config["GPT_KEY"]
 
-speech_file_path = record_audio(5)
+speech_file_path = record_audio(6)
 
 translation = openai.audio.translations.create(
      model="whisper-1",
