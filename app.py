@@ -44,4 +44,12 @@ translation = openai.audio.translations.create(
         file=Path(speech_file_path),
     )
 
-speak(translation.__getattribute__('text')) #get the string data from the translation object
+gpt_response = openai.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[{
+        "role": "system",
+        "content": translation.text
+    }]
+)
+
+speak(gpt_response.choices[0].message.content) #get the string data from the translation object
