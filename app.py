@@ -14,7 +14,6 @@ translation = openai.audio.translations.create(
         file=Path(speech_file_path),
     )
 
-
 gpt_response = openai.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[{
