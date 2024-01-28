@@ -14,7 +14,6 @@ transcription = openai.audio.transcriptions.create(
     file=Path(speech_file_path),
 )
 
-gpt_response = openai.chat.completions.create(
 gpt_response = openai.chat.completions.create( #input transcribed text as GPT prompt
     model="gpt-3.5-turbo",
     messages=[{
