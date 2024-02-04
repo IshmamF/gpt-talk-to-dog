@@ -9,13 +9,19 @@ openai.api_key = config["GPT_KEY"]
 
 speech_file_path = record_audio(6)
 
+models = {
+    "text-only": "gpt-3.5-turbo",
+    "txt-img": "gpt-4-vision-preview"
+}
+
 transcription = openai.audio.transcriptions.create(
     model="whisper-1",
     file=Path(speech_file_path),
 )
+print(f"The prompt you asked is: {transcription.text}")
 
 gpt_response = openai.chat.completions.create( #input transcribed text as GPT prompt
-    model="gpt-3.5-turbo",
+    model=models["text-only"],
     messages=[{
         "role": "system",
         "content": transcription.text
