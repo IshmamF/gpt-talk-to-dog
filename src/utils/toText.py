@@ -7,7 +7,7 @@ CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1 if sys.platform == 'darwin' else 2 #check if mac (monoaudio) else stereo
 RATE = 44100
-output_path = './public/audio/output.wav'
+output_path = './src/audio/output.wav'
 
 def record_audio(seconds: int):
     with wave.open(output_path, "wb") as wf:
