@@ -12,7 +12,6 @@ export default function Landing() {
                 <Button routepath="/textprompt" text="Text Prompt"/>
                 <Button routepath="/speechprompt" text="Speech Prompt"/>
                 <Button routepath="/imageprompt" text="Image Prompt"/>
-                <Button routepath="/speak" text="Speak"/>
             </div>
         </div>
     );

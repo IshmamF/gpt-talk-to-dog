@@ -1,23 +1,17 @@
 from flask import Flask, render_template, url_for, request, jsonify
 from app import gptAnswer
 from flask_cors import CORS
+from flask import send_file
+from pathlib import Path
+from utils.toSpeech import speak
 
 app = Flask(__name__)
 CORS(app)
 
 #url_for('static', filename='styles.css')
 
-"""@app.route("/")
-def landing():
-    return render_template('index.html', navigation=[
-        {"href":"/textPrompt", "title":"textPrompt"},
-        {"href":"/speechPrompt", "title":"speechPrompt"},
-        {"href":"/imagePrompt", "title":"imagePrompt"},
-        {"href":"/speak", "title":"speak"}
-    ])"""
-
 @app.route('/')
-def hello_world():
+def landing():
     return 'Hello, World!'
 
 @app.route("/gptanswer", methods=['POST'])
@@ -26,19 +20,15 @@ def getAnswer():
     answer = gptAnswer(request_data['question'])
     return jsonify({"answer": answer})
 
+@app.route("/gptspeakanswer", methods=['GET', 'POST'])#deals with speech input
+def getSpokenAnswer():
+    if request.method == 'GET':
+        return send_file(Path.cwd()/'backend'/'src'/'audio'/'audio.mp3', mimetype='audio/mp3')
+    request_data = request.get_json()
+    answer = gptAnswer(request_data['question'])
+    speak(answer)
+    return 'successfully created file'
+
+
+
 app.run()
-"""@app.route("/textPrompt") #in the case we need to add data to a DB, we should add the responses generated and the audio clippings
-def textPrompt():
-    return render_template('text.html', methods=['GET', 'POST'])
-        
-@app.route("/speechPrompt", methods=['GET', 'POST'])
-def speechPrompt():
-    return render_template('speech.html')
-
-@app.route("/imagePrompt", methods=['GET', 'POST'])
-def imagePrompt():
-    return render_template('image.html')
-
-@app.route("/speak", methods=['GET', 'POST'])
-def output():
-    return render_template('speakOutput.html', output="This will be implemented")"""
