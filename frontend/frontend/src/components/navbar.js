@@ -17,9 +17,6 @@ export default function Navbar() {
                 <li>
                     <Link to='/imageprompt' className="text-white hover:text-gray-300">Image Prompt</Link>
                 </li>
-                <li>
-                    <Link to='/speak' className="text-white hover:text-gray-300">Speak</Link>
-                </li>
             </ul>
         </nav>
     );
