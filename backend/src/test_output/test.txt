@@ -1,7 +1,15 @@
-Logging Timings of various prompts to see the query time of GPT (registered at: 02/25/2024 23:53:04)
-The prompt was: "Can you provide me with detailed directions to the nearest accessible restroom from my current location in the museum?", time: 1.3618948459625244s
-The prompt was: "Can you provide me with audio descriptions or tactile representations of the artworks in this gallery?", time: 2.2668910026550293s
-The prompt was: "How can I easily navigate the museum to access exhibits and information given my accessibility needs?", time: 1.746561050415039s
-The prompt was: "What is the shortest and most accessible route to the nearest restroom in the museum?", time: 1.0589549541473389s
-The prompt was: "What accessible features or services does the museum offer to assist visitors with varying accessibility needs?", time: 1.3890929222106934s
-Average time taken for each prompt was: 1.564678955078125s
+Logging Timings of various prompts to see the query time of GPT (registered at: 02/26/2024 13:10:01)
+The prompt was: "Can you help me navigate to the nearest wheelchair-accessible restroom within the museum?", time: 1.9832439422607422s
+The prompt was: "Can you provide a detailed audio description of the artwork in front of me, including its size, colors, and main features?", time: 2.0970349311828613s
+The prompt was: "How can I easily navigate the museum exhibits to ensure a comfortable and accessible experience given my specific accessibility needs?", time: 4.716831922531128s
+The prompt was: "Can you provide me with a detailed audio description of the artwork displayed in this exhibit?", time: 4.58751106262207s
+The prompt was: "What accessibility features and accommodations are available at this museum to assist visitors with mobility challenges?", time: 2.955578088760376s
+Average time taken for each prompt was: 3.2680399894714354s
+
+This was a new update (registered at: 02/26/2024 13:53:53)
+The prompt was: "Could you provide me with a detailed description of the artwork located in front of me so that I can visualize it more effectively?", time: 2.5374300479888916s
+The prompt was: "How can I best navigate the museum to ensure I can fully experience the exhibits despite my accessibility limitations?", time: 4.005859136581421s
+The prompt was: "Could you provide me with detailed descriptions or audio guides for the exhibits around me, as I have visual or hearing impairments?", time: 1.6256461143493652s
+The prompt was: "What is the best route to take to access the exhibits with wheelchair accessibility in this museum?", time: 2.0778379440307617s
+The prompt was: "Could you provide me with a step-by-step audio guide for navigating the museum, highlighting accessible routes and exhibits along the way?", time: 5.364694118499756s
+Average time taken for each prompt was: 3.122293472290039s

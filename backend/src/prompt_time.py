@@ -36,7 +36,8 @@ def calc_time(prompt: str) -> str:
     #given a prompt we will see how long our model takes to respond
     start_time = time.time()
     gptAnswer(prompt)
-    return str(time.time() - start_time)
+    time_delta = str(time.time() - start_time)
+    return time_delta
 
 
 #creating prompts with out of the box gpt....
