@@ -1,0 +1,7 @@
+Logging Timings of various prompts to see the query time of GPT (registered at: 02/25/2024 23:53:04)
+The prompt was: "Can you provide me with detailed directions to the nearest accessible restroom from my current location in the museum?", time: 1.3618948459625244s
+The prompt was: "Can you provide me with audio descriptions or tactile representations of the artworks in this gallery?", time: 2.2668910026550293s
+The prompt was: "How can I easily navigate the museum to access exhibits and information given my accessibility needs?", time: 1.746561050415039s
+The prompt was: "What is the shortest and most accessible route to the nearest restroom in the museum?", time: 1.0589549541473389s
+The prompt was: "What accessible features or services does the museum offer to assist visitors with varying accessibility needs?", time: 1.3890929222106934s
+Average time taken for each prompt was: 1.564678955078125s
