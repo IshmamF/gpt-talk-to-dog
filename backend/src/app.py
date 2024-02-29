@@ -1,14 +1,5 @@
 from dotenv import dotenv_values
-#from pathlib import Path
 import openai
-#from utils.toSpeech import speak
-#from utils.toText import record_audio
-
-config = dotenv_values('.env')
-openai.api_key = config["GPT_KEY"]
-
-#speech_file_path = record_audio(6)
-
 
 
 def gptAnswer(question):
@@ -34,5 +25,4 @@ def gptAnswer(question):
 
     return gpt_response.choices[0].message.content
 
-#have to return what the prompt was that the user inputted into the speech
 

@@ -8,8 +8,6 @@ from utils.toSpeech import speak
 app = Flask(__name__)
 CORS(app)
 
-#url_for('static', filename='styles.css')
-
 @app.route('/')
 def landing():
     return 'Hello, World!'
