@@ -1,10 +1,8 @@
 import Navbar from '../components/navbar'
-import axios from "axios";
 import React, { useState } from "react";
-    
+import Record from '../components/record'
 
 export default function SpeechPrompt() {
-
 
     const request_param = {
         method: "POST",
@@ -25,6 +23,7 @@ export default function SpeechPrompt() {
                     {/* auto play needs to be fixed here as chrome doesn't support aotuplay (safari does)*/}
                 </div>
             </div>  
+            <Record/>
         </div>
     );
 }
