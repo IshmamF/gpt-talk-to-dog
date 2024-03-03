@@ -4,15 +4,16 @@ export default function TextBox () {
     const [answer, setAnswer] = useState(''); // Used for storing the user input
     const [output, setOutput] = useState(''); // Corrected to useState, used for storing the response
     const [isLoading, setIsLoading] = useState(false);
+    const [convoHist, setConvoHist] = useState([]); //will hold the entire conversation history as a sort of cache...
 
     async function handleOnSubmit() {
         setIsLoading(true);
-        // Assuming `answer` contains the user's question, and you want to send this to the backend
+        setConvoHist([...convoHist, answer]) //add the question asked to the history cache without destructive behavior...
         const request_url = 'http://127.0.0.1:5000/gptanswer';
         const request_param = {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ question: answer }), // Ensure your backend expects a JSON object with a `question` field
+            body: JSON.stringify({ question: answer, context: String(convoHist)}), // Ensure your backend expects a JSON object with a `question` field
         };
         const response = await fetch(request_url, request_param);
         const responseData = await response.json();
