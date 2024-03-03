@@ -1,5 +1,7 @@
 openai
-dotenv
+python-dotenv
 pygame
 pyaudio
 pathlib
+Flask
+Flask-Cors

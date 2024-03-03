@@ -8,6 +8,9 @@ import openai
 from app import gptAnswer
 from datetime import datetime
 import json
+import matplotlib
+
+
 
 file = Path.cwd() / 'backend' / 'src' / 'test_output' / 'test.txt' 
 config = dotenv_values('.env')
@@ -25,7 +28,7 @@ def query_gpt(prompt=generate_prompt) -> str:
         response_format= {"type": "json_object"},
         messages=[
             {"role": "assistant", "content": context}, # add extra context to the user's req
-            {"role": "system", "content": "You are a helpful assistant designed to output JSON containing whatever the user requires."},
+            {"role": "system", "content": "You are a helpful assistant designed to output JSON"},
             {"role": "user", "content": prompt}
         ],
     )
@@ -42,6 +45,7 @@ def calc_time(prompt: str) -> str:
 
 #creating prompts with out of the box gpt....
 prompts_and_timing = [json.loads(query_gpt())]
+print(prompts_and_timing)
 
 #benchmarking the time with 'spot' gpt assistant....
 for item in prompts_and_timing[0]:
