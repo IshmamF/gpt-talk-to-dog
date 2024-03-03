@@ -1,8 +1,6 @@
-from flask import Flask, render_template, url_for, request, jsonify
-from app import gptAnswer
+from flask import Flask, request, jsonify
+from app import gptAnswer, checkPrompt
 from flask_cors import CORS
-from flask import send_file
-from pathlib import Path
 
 app = Flask(__name__)
 CORS(app)
@@ -14,7 +12,13 @@ def landing():
 @app.route("/gptanswer", methods=['POST'])
 def getAnswer():
     request_data = request.get_json()
-    answer = 'The request was empty.' if len(request_data['question']) == 0 else gptAnswer(request_data['question'])
+    prompt = request_data['question']
+    if len(prompt) == 0:
+        answer = 'The request was empty.'
+    elif checkPrompt(prompt):
+        answer = 'The request is under suspicion of being a prompt injection or jailbreak attack'
+    else:
+        answer = gptAnswer(request_data['question'])
     return jsonify({"answer": answer})
 
 # @app.route("/gptspeakanswer", methods=['GET', 'POST'])#deals with speech input
