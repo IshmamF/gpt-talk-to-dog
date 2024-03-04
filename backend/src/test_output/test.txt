@@ -1,15 +1,215 @@
-Logging Timings of various prompts to see the query time of GPT (registered at: 02/26/2024 13:10:01)
-The prompt was: "Can you help me navigate to the nearest wheelchair-accessible restroom within the museum?", time: 1.9832439422607422s
-The prompt was: "Can you provide a detailed audio description of the artwork in front of me, including its size, colors, and main features?", time: 2.0970349311828613s
-The prompt was: "How can I easily navigate the museum exhibits to ensure a comfortable and accessible experience given my specific accessibility needs?", time: 4.716831922531128s
-The prompt was: "Can you provide me with a detailed audio description of the artwork displayed in this exhibit?", time: 4.58751106262207s
-The prompt was: "What accessibility features and accommodations are available at this museum to assist visitors with mobility challenges?", time: 2.955578088760376s
-Average time taken for each prompt was: 3.2680399894714354s
+Logging Timings of various prompts to see the query time of GPT (registered at: 03/03/2024 00:29:51)
+The prompt was: Can you provide me with a detailed description of the artwork in front of me?, time: 1.8793225288391113s
+The prompt was: Is there a tactile model or a 3D print available for this sculpture?, time: 0.9250364303588867s
+The prompt was: Could you guide me to the nearest accessible restroom from my current location?, time: 0.9791560173034668s
+The prompt was: Which exhibitions or galleries have audio descriptions for visually impaired visitors?, time: 1.6227478981018066s
+The prompt was: Do you have any specialized tools or devices available to assist visitors with hearing impairments?, time: 0.9900012016296387s
+The prompt was: Can you recommend a route that avoids stairs and has ramps or elevator access?, time: 2.2374866008758545s
+The prompt was: Is there a wheelchair available for visitor use while exploring the museum?, time: 1.3527822494506836s
+The prompt was: Are there designated quiet areas for visitors who may need a sensory break?, time: 1.5989465713500977s
+The prompt was: Is there an app or online guide available to assist me in navigating the museum independently?, time: 1.4214649200439453s
+The prompt was: Do you offer sign language interpretation for guided tours or events at the museum?, time: 1.2505998611450195s
+The prompt was: Are there seating areas or benches scattered throughout the museum for visitors who need to rest periodically?, time: 1.20721435546875s
+The prompt was: Can you help me locate the closest braille map to help me navigate the museum?, time: 1.2509803771972656s
+The prompt was: What kind of support do you offer for visitors with cognitive or developmental disabilities?, time: 1.2631945610046387s
+The prompt was: Are there designated parking spots for visitors with accessibility needs near the museum entrance?, time: 1.431717872619629s
+The prompt was: Could you assist me in arranging a touch tour to explore select artworks in a hands-on manner?, time: 1.452462911605835s
+Average time taken for each prompt was roughly: 1.391s
 
-This was a new update (registered at: 02/26/2024 13:53:53)
-The prompt was: "Could you provide me with a detailed description of the artwork located in front of me so that I can visualize it more effectively?", time: 2.5374300479888916s
-The prompt was: "How can I best navigate the museum to ensure I can fully experience the exhibits despite my accessibility limitations?", time: 4.005859136581421s
-The prompt was: "Could you provide me with detailed descriptions or audio guides for the exhibits around me, as I have visual or hearing impairments?", time: 1.6256461143493652s
-The prompt was: "What is the best route to take to access the exhibits with wheelchair accessibility in this museum?", time: 2.0778379440307617s
-The prompt was: "Could you provide me with a step-by-step audio guide for navigating the museum, highlighting accessible routes and exhibits along the way?", time: 5.364694118499756s
-Average time taken for each prompt was: 3.122293472290039s
+This was a new update (registered at: 03/03/2024 12:22:59)
+The prompt was: Can you provide me with a detailed description of the artwork in front of me?, time: 1.5579497814178467s
+The prompt was: Please guide me to the nearest elevator or accessible route to move between floors?, time: 1.5932869911193848s
+The prompt was: Could you help me locate the nearest accessible restroom?, time: 1.9227938652038574s
+The prompt was: Can you describe the layout of this exhibit and suggest the best route for me to navigate through it?, time: 2.2917373180389404s
+The prompt was: What information can you provide on this exhibit in a format that is accessible to me?, time: 3.626554489135742s
+The prompt was: Is there any magnification tool available to help me view the details of this exhibit better?, time: 1.4294383525848389s
+The prompt was: Can you provide me with a tactile or audio representation of this artwork?, time: 1.884326696395874s
+The prompt was: How can I access more information or audio descriptions about the artworks in this museum?, time: 2.293229818344116s
+The prompt was: Are there any seating areas provided throughout the museum for visitors who need to rest?, time: 1.1320855617523193s
+The prompt was: Is there a dedicated staff member or service available to assist visitors with accessibility needs?, time: 2.474447727203369s
+The prompt was: Do you have a map with specific routes marked for visitors with mobility challenges?, time: 1.6446857452392578s
+The prompt was: Could you recommend any assistive technology devices that would enhance my museum experience?, time: 2.5393216609954834s
+The prompt was: Can you help me adjust the lighting or any other environmental factors to make it more comfortable for me?, time: 1.320199966430664s
+The prompt was: How can I engage with interactive exhibits if I have limited mobility or vision?, time: 2.2217440605163574s
+The prompt was: Is there a designated quiet space or sensory-friendly area in the museum for visitors with sensory sensitivities?, time: 1.1743674278259277s
+Average time taken for each prompt was roughly: 1.94s
+
+This was a new update (registered at: 03/03/2024 12:42:06)
+The prompt was: Can you provide a brief description of this exhibit?, time: 1.3331108093261719s
+The prompt was: Could you assist me in locating the nearest accessible restroom?, time: 1.3413634300231934s
+The prompt was: Is there a tactile or audio guide available for this exhibit?, time: 2.165419340133667s
+The prompt was: Can you recommend the best route to access the elevator?, time: 1.6278595924377441s
+The prompt was: Are there any touchable replicas or models of artifacts in this area?, time: 1.0579514503479004s
+The prompt was: Could you help me identify any interactive exhibits suitable for individuals with visual impairments?, time: 2.534294366836548s
+The prompt was: Is there a designated space for quiet or rest breaks within the museum?, time: 2.0887019634246826s
+The prompt was: Can you inform me of any upcoming guided tours designed for visitors with mobility challenges?, time: 1.7886402606964111s
+The prompt was: Are there any designated seating areas for visitors who may need a break?, time: 1.5219168663024902s
+The prompt was: Could you guide me to the museum's accessibility map for easy reference?, time: 1.1907143592834473s
+The prompt was: Can you provide information on the availability of wheelchairs or mobility aids for loan?, time: 1.401820421218872s
+The prompt was: Is there a specific entrance reserved for visitors with disabilities?, time: 2.125004529953003s
+The prompt was: Are there any virtual reality experiences accessible for users with hearing impairments?, time: 2.1808273792266846s
+The prompt was: Could you assist in adjusting the lighting or contrast settings on interactive displays for better visibility?, time: 1.5576543807983398s
+The prompt was: Can you recommend any multimedia presentations or audio descriptions available for enhancing my visit?, time: 2.0133440494537354s
+Average time taken for each prompt was roughly: 1.729s
+
+This was a new update (registered at: 03/03/2024 13:09:57)
+The prompt was: Can you provide me with information about the nearest accessible restroom?, time: 1.5608527660369873s
+The prompt was: How can you help me locate wheelchair ramps throughout the museum?, time: 1.4853191375732422s
+The prompt was: Could you assist me in finding exhibits with audio descriptions for visually impaired visitors?, time: 1.5223772525787354s
+The prompt was: Can I get directions to the closest elevator or escalator for easier navigation?, time: 1.3048667907714844s
+The prompt was: Are there tactile maps available for visitors with visual impairments?, time: 1.9577829837799072s
+The prompt was: How can I access sign language interpretation services for any guided tours or presentations?, time: 1.4187343120574951s
+The prompt was: Could you recommend quiet spaces or sensory rooms for visitors with sensory sensitivities?, time: 2.3685600757598877s
+The prompt was: Can you tell me about seating options for visitors with mobility issues in exhibit areas?, time: 3.716230869293213s
+The prompt was: How can I request assistance for carrying objects or personal belongings while exploring the museum?, time: 2.201146125793457s
+The prompt was: Is there a designated waiting area for visitors with mobility devices or service animals?, time: 1.3110568523406982s
+The prompt was: Can you guide me on how to access captions or transcriptions for multimedia exhibits?, time: 1.631331443786621s
+The prompt was: Are there braille labels or tactile exhibits available for visitors with visual impairments?, time: 1.230888843536377s
+The prompt was: How can I request a guided tour specifically tailored to my accessibility needs?, time: 2.276012420654297s
+The prompt was: What resources are available for visitors with cognitive or developmental disabilities?, time: 2.4935483932495117s
+The prompt was: Can you provide assistive listening devices for visitors with hearing impairments during presentations or talks?, time: 1.878117322921753s
+Average time taken for each prompt was roughly: 1.89s
+
+This was a new update (registered at: 03/03/2024 13:10:49)
+The prompt was: Can you provide me with directions to the nearest accessible restroom?, time: 1.1865627765655518s
+The prompt was: Could you describe the layout of this museum and highlight the accessible routes?, time: 2.70900297164917s
+The prompt was: What materials are available in a format that is accessible to individuals with visual impairments?, time: 1.9756011962890625s
+The prompt was: How can I request assistance in navigating through the museum if needed?, time: 1.9180490970611572s
+The prompt was: Are there any tactile or interactive exhibits designed to cater to visitors with accessibility needs?, time: 1.5314273834228516s
+The prompt was: Can you assist me in finding the elevators or ramps to access different levels of the museum?, time: 2.016047477722168s
+The prompt was: Are there any listening devices or guided tours available for visitors with hearing impairments?, time: 3.8237035274505615s
+The prompt was: Which areas of the museum have seating options available for visitors who may need to rest?, time: 1.380406379699707s
+The prompt was: Do you have any exhibits that incorporate braille descriptions or tactile elements?, time: 2.444516897201538s
+The prompt was: How can I get assistance in interpreting or understanding the exhibits in case of accessibility challenges?, time: 2.430202007293701s
+The prompt was: Is there a designated quiet space where visitors with sensory sensitivities can take a break?, time: 1.9673810005187988s
+The prompt was: Can you suggest a specific exhibit or artifact that would be of particular interest to visitors with accessibility needs?, time: 1.8844318389892578s
+The prompt was: Are there any services in place to assist visitors with mobility impairments when moving between different areas of the museum?, time: 2.076408863067627s
+The prompt was: What are the different means available for me to request assistance or accommodations during my visit?, time: 2.614823818206787s
+The prompt was: Can you provide information on accessible parking options and drop-off points near the museum entrance?, time: 1.5338895320892334s
+Average time taken for each prompt was roughly: 2.099s
+
+This was a new update (registered at: 03/03/2024 13:11:27)
+The prompt was: Can you provide a detailed description of the artwork in front of me?, time: 2.2819862365722656s
+The prompt was: Is there a wheelchair-accessible route to the next exhibition hall?, time: 1.6920051574707031s
+The prompt was: Could you read out the exhibit labels for me?, time: 3.2383642196655273s
+The prompt was: Can you help me locate the nearest accessible restroom?, time: 1.386674404144287s
+The prompt was: Are there any tactile or sensory-friendly exhibits available?, time: 2.024609327316284s
+The prompt was: Could you guide me to the interactive exhibits that are wheelchair-friendly?, time: 1.3994288444519043s
+The prompt was: Can you assist me in finding a quiet space to rest?, time: 1.2150111198425293s
+The prompt was: Is there a sign language interpreter available for any upcoming museum tours?, time: 1.8325436115264893s
+The prompt was: Would you be able to recommend a specific exhibit that is well-suited for visually impaired visitors?, time: 2.0523319244384766s
+The prompt was: Could you provide audio descriptions of the exhibits in this gallery?, time: 2.9623053073883057s
+The prompt was: Can you help me navigate through the museum using the accessible routes?, time: 1.456662654876709s
+The prompt was: Which exhibits have accessible multimedia presentations?, time: 2.5802290439605713s
+The prompt was: Is there a designated area where service animals are allowed?, time: 1.0591025352478027s
+The prompt was: Are there any seating options available for visitors with mobility limitations?, time: 1.9105257987976074s
+The prompt was: Could you inform me about any upcoming accessibility-focused events or workshops at the museum?, time: 2.814080238342285s
+Average time taken for each prompt was roughly: 1.994s
+
+This was a new update (registered at: 03/03/2024 13:18:54)
+The prompt was: Can you provide me with a detailed description of the artwork located in gallery room A?, time: 2.630659580230713s
+The prompt was: Can you navigate me to the nearest wheelchair-accessible restroom?, time: 1.0981664657592773s
+The prompt was: Could you assist me in finding the tactile model of the sculpture in gallery room B?, time: 1.3448610305786133s
+The prompt was: What accommodations are available for visitors with visual impairments in this museum?, time: 1.7993345260620117s
+The prompt was: Is there a guided audio tour specifically designed for individuals with hearing impairments?, time: 2.294377088546753s
+The prompt was: Can you describe the layout of the museum's floor plan to help me navigate more easily?, time: 1.883772850036621s
+The prompt was: How can I access a sign language interpreter for a museum tour?, time: 2.8457770347595215s
+The prompt was: Are there designated quiet spaces available for visitors with sensory sensitivities?, time: 1.855743408203125s
+The prompt was: Can you provide information about the availability of mobility aids or wheelchairs for rent?, time: 1.7699720859527588s
+The prompt was: How can I request a tactile guide or access a Braille guide for the museum exhibits?, time: 2.123735189437866s
+The prompt was: Are there captioning services available for the museum's multimedia presentations?, time: 2.1457293033599854s
+The prompt was: Can you recommend accessible seating areas for resting throughout the museum?, time: 1.6165294647216797s
+The prompt was: Is there a specific assistance desk where I can ask for help or information related to my accessibility needs?, time: 2.4155702590942383s
+The prompt was: Can you guide me to the nearest designated parking spots for visitors with disabilities?, time: 1.5665223598480225s
+The prompt was: Are there any interactive exhibits that are specifically designed for visitors with cognitive disabilities?, time: 1.733726978302002s
+Average time taken for each prompt was roughly: 1.942s
+
+This was a new update (registered at: 03/03/2024 13:22:39)
+The prompt was: Can you provide me with information about the museum's accessibility features?, time: 1.9247238636016846s
+The prompt was: What services are available for visitors with mobility limitations?, time: 5.423178672790527s
+The prompt was: Could you recommend the best routes within the museum for wheelchair users?, time: 2.2239696979522705s
+The prompt was: Do you have any tactile or audio-based exhibits suitable for visually impaired visitors?, time: 2.690439462661743s
+The prompt was: Can you suggest quiet areas for visitors who may need a low-sensory environment?, time: 1.615980625152588s
+The prompt was: Are there any multi-sensory experiences available for visitors with sensory processing issues?, time: 2.0935475826263428s
+The prompt was: How can I request sign language interpreters or captioning services during guided tours?, time: 1.9673840999603271s
+The prompt was: Are there any virtual tours or online resources available to access museum exhibits remotely?, time: 3.064558982849121s
+The prompt was: What assistance is provided for visitors with cognitive disabilities or learning differences?, time: 2.4612209796905518s
+The prompt was: Can you inform me on the availability of seating or resting areas throughout the museum?, time: 1.8431129455566406s
+The prompt was: How can I request assistance from staff in navigating the museum or understanding exhibits?, time: 1.8537490367889404s
+The prompt was: Are there any braille or large print guides available for visitors with visual impairments?, time: 1.8140537738800049s
+The prompt was: Could you recommend the best days and times to visit with reduced crowds for visitors who may feel overwhelmed by large groups?, time: 3.1098244190216064s
+The prompt was: What are the emergency evacuation procedures in place for visitors with mobility challenges?, time: 2.10392165184021s
+The prompt was: Can you provide information about accessible parking options and drop-off points near the museum entrance?, time: 1.5145976543426514s
+Average time taken for each prompt was roughly: 2.38s
+
+This was a new update (registered at: 03/03/2024 13:25:24)
+The prompt was: Can you provide me with a detailed description of the artwork next to me?, time: 1.5456173419952393s
+The prompt was: Could you guide me through the museum to the nearest elevator or wheelchair ramp?, time: 1.7665345668792725s
+The prompt was: What is the accessibility level of this museum's restrooms and dining areas?, time: 2.027740478515625s
+The prompt was: Can you describe the layout of the current exhibit room I am in?, time: 2.5167479515075684s
+The prompt was: Are there any tactile or auditory features in this museum that cater to visually impaired visitors?, time: 1.7961575984954834s
+The prompt was: Which artworks are placed at a height accessible for someone in a wheelchair?, time: 1.1081805229187012s
+The prompt was: Can you help me locate a seating area where I can rest or read about the exhibits?, time: 1.2302370071411133s
+The prompt was: Do you have any guided audio tours or transcripts available for visitors with hearing impairments?, time: 1.399665355682373s
+The prompt was: How can I navigate through the museum using alternative routes that are wheelchair-friendly?, time: 2.158078670501709s
+The prompt was: Is there a designated parking area for visitors with disabilities near the museum entrance?, time: 1.2307968139648438s
+The prompt was: Can you adjust the lighting or temperature settings in the exhibit spaces for my comfort?, time: 1.1451220512390137s
+The prompt was: Are there any interactive exhibits specifically designed for visitors with physical limitations?, time: 1.851020336151123s
+The prompt was: Could you provide me with information on the availability of sign language interpreters for guided tours?, time: 1.357405424118042s
+The prompt was: Can you suggest a specific path or route through the museum that minimizes stairs and obstacles?, time: 2.022261619567871s
+The prompt was: What resources or tools are available to help me understand and appreciate the artworks on display?, time: 3.529984474182129s
+Average time taken for each prompt was roughly: 1.779s
+
+This was a new update (registered at: 03/03/2024 13:39:15)
+The prompt was: Can you provide me with directions to the nearest accessible restroom?, time: 1.4605529308319092s
+The prompt was: What exhibits in this museum are wheelchair accessible?, time: 1.6038305759429932s
+The prompt was: Could you help me locate the nearest elevator to access upper floors?, time: 1.1033482551574707s
+The prompt was: Do you have information on tactile or audio-enhanced exhibits for visually impaired visitors?, time: 3.321162462234497s
+The prompt was: Is there a map available that highlights the accessible pathways through the museum?, time: 1.8684475421905518s
+The prompt was: Can you inform me about any designated parking areas for visitors with disabilities?, time: 1.2111239433288574s
+The prompt was: Are there any guided tours specifically tailored for visitors with mobility impairments?, time: 2.0015316009521484s
+The prompt was: How can I access the museum's online audio descriptions for the exhibits?, time: 1.6592543125152588s
+The prompt was: What assistive devices or technology are available for visitors with hearing loss?, time: 2.538994312286377s
+The prompt was: Could you provide information on the availability of sign language interpreters for tours?, time: 1.806567907333374s
+The prompt was: Are there any quiet spaces within the museum for individuals with sensory sensitivities?, time: 2.1407828330993652s
+The prompt was: Can you recommend the best routes to access the exhibits without encountering stairs?, time: 3.221393585205078s
+The prompt was: Do you have any information about seating accommodations in galleries for visitors with mobility issues?, time: 2.4286818504333496s
+The prompt was: Are there any visual guides or detailed descriptions available for visitors with cognitive disabilities?, time: 1.4222595691680908s
+The prompt was: How can I provide feedback on the accessibility of the museum facilities and services?, time: 1.8062076568603516s
+Average time taken for each prompt was roughly: 1.973s
+
+This was a new update (registered at: 03/03/2024 13:49:44)
+The prompt was: Can you provide information about the nearest accessible restroom?, time: 1.6095092296600342s
+The prompt was: Where can I find accessible seating in the museum?, time: 1.3618519306182861s
+The prompt was: Can you recommend the most wheelchair-friendly route to the exhibits?, time: 1.4903697967529297s
+The prompt was: Is there a tactile map available for visitors with visual impairments?, time: 1.3898110389709473s
+The prompt was: Can you assist in finding a sign language interpreter for a guided tour?, time: 1.7162988185882568s
+The prompt was: Are there any guided tours specifically designed for visitors with mobility limitations?, time: 2.026177167892456s
+The prompt was: Can you provide detailed descriptions of the museum exhibits for visitors with visual impairments?, time: 5.475024223327637s
+The prompt was: Is there a dedicated quiet space for visitors who may need a break from sensory overload?, time: 2.3002614974975586s
+The prompt was: Do you have resources available in alternative formats such as braille or large print?, time: 1.545516014099121s
+The prompt was: Can you recommend a suitable exhibit for someone with hearing impairments?, time: 1.331418752670288s
+The prompt was: Is there a service available to assist visitors with cognitive disabilities during their visit?, time: 1.6377482414245605s
+The prompt was: Can you help me locate any assistive listening devices for tours or presentations?, time: 1.6083977222442627s
+The prompt was: Is there a list of accessibility features available for the museum's website or information desk?, time: 1.4477970600128174s
+The prompt was: Could you provide information on the level of accessibility of the museum's transportation options?, time: 1.897937536239624s
+The prompt was: Can you recommend a quiet time to visit the museum for visitors with sensory sensitivities?, time: 2.1087660789489746s
+Average time taken for each prompt was roughly: 1.93s
+
+This was a new update (registered at: 03/03/2024 13:57:28)
+The prompt was: Can you provide me with information about the nearest accessible restroom?, time: 1.229093074798584s
+The prompt was: Could you guide me to the closest wheelchair-friendly entrance to the museum?, time: 1.6279935836791992s
+The prompt was: What accessibility features are available in the exhibit area?, time: 5.410540819168091s
+The prompt was: Is there a sensory-friendly exhibit or area in the museum?, time: 1.0521736145019531s
+The prompt was: Can you recommend a quiet space in the museum for sensory breaks?, time: 1.3929872512817383s
+The prompt was: Do you have a tactile map available to help me navigate through the museum?, time: 1.1822764873504639s
+The prompt was: Are there any assistive listening devices provided for exhibit descriptions?, time: 1.4027798175811768s
+The prompt was: Do you offer guided tours specifically tailored for visitors with mobility challenges?, time: 1.9006969928741455s
+The prompt was: Are there signs in large font or braille for visitors with visual impairments?, time: 1.410254955291748s
+The prompt was: Could you tell me about the seating options available for visitors who need rest breaks?, time: 1.5909156799316406s
+The prompt was: Is there a designated parking area for visitors with accessibility needs?, time: 1.4431641101837158s
+The prompt was: Can you provide information on the museum's elevators and ramps for wheelchair access?, time: 1.9268569946289062s
+The prompt was: Do you have sign language interpreters available for guided tours or presentations?, time: 2.7400617599487305s
+The prompt was: Are there any interactive exhibits designed with accessibility features in mind?, time: 1.7704710960388184s
+The prompt was: Could you recommend a specific exhibit section that is best suited for visitors with mobility challenges?, time: 1.5938873291015625s
+Average time taken for each prompt was roughly: 1.845s

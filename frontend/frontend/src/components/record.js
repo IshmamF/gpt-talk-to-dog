@@ -24,8 +24,7 @@ export default function Record() {
             fetch(request_url, request_param)
                 .then(res => res.json())
                 .then(ans => setGptRes(ans.answer))
-                .catch(() => "nuttin")
-            const utterThis = new SpeechSynthesisUtterance(gptRes); //update the TTS so that it speaks the new response 
+                .catch(() => setGptRes('There was an internal error please try again later!'))
         }
     }, [transcription])
 
@@ -69,7 +68,7 @@ export default function Record() {
                 <p>Trasncription: {transcription}</p>
                 <p>GPT response: <br/>{gptRes}</p>
 
-                {gptRes.length === 0 ? '' : <button style={{background:"yellow", borderRadius:0.5}} onClick={handleSpeakClick}>Repeat</button>}
+                {gptRes.length ? null :<button style={{background:"yellow", borderRadius:0.5}} onClick={handleSpeakClick}>repeat</button>}
             </center>
         </>
     )
