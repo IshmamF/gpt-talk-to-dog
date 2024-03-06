@@ -7,7 +7,7 @@ import torch
 tokenizer = AutoTokenizer.from_pretrained("ProtectAI/deberta-v3-base-prompt-injection")
 model = AutoModelForSequenceClassification.from_pretrained("ProtectAI/deberta-v3-base-prompt-injection")
 
-def gptAnswer(question):
+def gptAnswer(question: str) -> str:
     config = dotenv_values('.env')
     openai.api_key = config["GPT_KEY"]
 
@@ -31,7 +31,7 @@ def gptAnswer(question):
     return gpt_response.choices[0].message.content
 
 
-def checkPrompt(prompt):
+def checkPrompt(prompt: str) -> bool:
     schema = injections.init()
 
     langKitCheck = extract({"prompt":prompt},schema=schema) 

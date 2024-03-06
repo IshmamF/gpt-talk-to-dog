@@ -21,6 +21,4 @@ def getAnswer():
         answer = gptAnswer(request_data['question'])
     return jsonify({"answer": answer})
 
-
-
 app.run()
