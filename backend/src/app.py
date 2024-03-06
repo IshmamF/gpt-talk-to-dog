@@ -16,7 +16,7 @@ def gptAnswer(question):
         "txt-img": "gpt-4-vision-preview"
     }
 
-    context = "we are inside the museum of natural history in NYC and you are currently helping a legally blind female user"
+    context = "we are inside the museum of natural history in NYC and you are currently helping an individuals with various disabilities such as blindness, deafness, near sightedness etc."
 
     gpt_response = openai.chat.completions.create( #input transcribed text as GPT prompt
         model=models["text-only"],

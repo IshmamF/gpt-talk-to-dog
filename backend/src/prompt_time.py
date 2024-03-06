@@ -8,7 +8,7 @@ import openai
 from app import gptAnswer
 from datetime import datetime
 import json
-import matplotlib
+
 
 
 
@@ -17,7 +17,7 @@ config = dotenv_values('.env')
 openai.api_key = config["GPT_KEY"]
 
 
-generate_prompt = "generate fifteen questions that I can ask a generative AI smart assistant which is located in a museum to help me since I have accessibility issues. put them in a python dictionary in the format {prompt: generated question here, time: ''}"
+generate_prompt = "generate one hundred questions that I can ask a generative AI smart assistant which is located in a museum to help me since I have accessibility issues. put them in a python dictionary in the format {prompt: generated question here, time: ''}"
 
 def query_gpt(prompt=generate_prompt) -> str:
     #this can be turned into one query by returning json.
@@ -58,6 +58,7 @@ if not os.path.exists(file):
     with open(file, 'w') as initiateFile:
         initiateFile.write(f"Logging Timings of various prompts to see the query time of GPT (registered at: {datetime.now().strftime('%m/%d/%Y %H:%M:%S')})\n")
         avg_time = 0.0
+        initiateFile.write(f"There are {len(prompts_and_timing[0])} prompts here")
         for item in prompts_and_timing[0]:
             avg_time += float(prompts_and_timing[0][item]['time'])
             initiateFile.write(f"The prompt was: {prompts_and_timing[0][item]['prompt']}, time: {prompts_and_timing[0][item]['time']}s\n")
@@ -66,6 +67,7 @@ else: #handle the updates
     with open(file, 'a') as updateFile:
         updateFile.write(f"\nThis was a new update (registered at: {datetime.now().strftime('%m/%d/%Y %H:%M:%S')})\n")
         avg_time = 0.0
+        updateFile.write(f"There are {len(prompts_and_timing[0])} prompts here")
         for item in prompts_and_timing[0]:
             avg_time += float(prompts_and_timing[0][item]['time'])
             updateFile.write(f"The prompt was: {prompts_and_timing[0][item]['prompt']}, time: {prompts_and_timing[0][item]['time']}s\n")

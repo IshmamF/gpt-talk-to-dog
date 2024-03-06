@@ -67,8 +67,7 @@ export default function Record() {
                 <br/>
                 <p>Trasncription: {transcription}</p>
                 <p>GPT response: <br/>{gptRes}</p>
-
-                {!gptRes.length ? "" : <button style={{background:"yellow", borderRadius:0.5}} onClick={handleSpeakClick}>Speak</button>}
+                {!gptRes.length ? null : <button style={{background:"yellow", borderRadius:0.5}} onClick={handleSpeakClick}>repeat</button>}
             </center>
         </>
     )
