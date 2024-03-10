@@ -5,6 +5,7 @@ pyaudio
 pathlib
 Flask
 Flask-Cors
-langkit
 transformers
 torch
+torchvision 
+torchaudio 
