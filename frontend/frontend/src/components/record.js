@@ -9,6 +9,7 @@ export default function Record() {
 
     const [transcription, setTranscription] = useState('') //states
     const [gptRes, setGptRes] = useState('')
+    const [contxt, setContext] = useState([])
 
     useEffect(()=>{ //fetch whenever the transcription state updates...
         // oddly enough it fetches before it needs to so this check is to ensure there is no misfire when we first call it
@@ -16,10 +17,11 @@ export default function Record() {
         // this shouldn't fire at all on the initial call since it depends on the change of the transcription state...
         if (transcription){ 
             const request_url = 'http://127.0.0.1:5000/gptanswer';
+            setContext([...contxt, transcription]) //poplate transcription with the questions
             const request_param = {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ question: transcription }), // Ensure your backend expects a JSON object with a `question` field
+                body: JSON.stringify({ question: transcription, context: contxt}), // Ensure your backend expects a JSON object with a `question` field
             };
             fetch(request_url, request_param)
                 .then(res => res.json())
