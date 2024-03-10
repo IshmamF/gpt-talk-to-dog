@@ -12,9 +12,13 @@ def landing():
 @app.route("/gptanswer", methods=['POST'])
 def getAnswer():
     request_data = request.get_json()
-
-    answer = 'The request was empty.' if len(request_data['question']) == 0 else gptAnswer(request_data['question'], request_data['context'])
-
+    prompt = request_data['question']
+    if len(prompt) == 0:
+        answer = 'The request was empty.'
+    elif checkPrompt(prompt):
+        answer = 'The request is under suspicion of being a prompt injection or jailbreak attack'
+    else:
+        answer = gptAnswer(prompt, request_data['context'])
     return jsonify({"answer": answer})
 
 app.run()
