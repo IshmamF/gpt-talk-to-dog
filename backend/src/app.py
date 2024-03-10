@@ -20,8 +20,8 @@ def gptAnswer(question, context):
 
     context = f"""
                 we are inside the museum of natural history in NYC and you are currently helping a legally blind female user additionally, 
-                this is the conversation history in a javascript list with objects of questions asked and answers you have generated: {context}. If asked about the history or 
-                context about the conversation please refer to this JSON, and only this.
+                this is the conversation history in a javascript list: {context}. If asked about the history or 
+                context about the conversation please refer to this list, and only this.
             """
 
     gpt_response = openai.chat.completions.create( #input transcribed text as GPT prompt
