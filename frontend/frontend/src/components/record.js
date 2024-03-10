@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import OpenAI from "openai";
+// import OpenAI from "openai";
 
 export default function Record() {
     var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
@@ -29,7 +29,6 @@ export default function Record() {
     }, [transcription])
 
 
-
     if (SpeechGrammarList) {
         var speechRecognitionList = new SpeechGrammarList();
         recognition.grammars = speechRecognitionList;
@@ -54,7 +53,6 @@ export default function Record() {
         setTranscription(transcript)
     }
     
-
     recognition.onerror = function(event) {
         console.error("Speech recognition error detected: " + event.error)
     }
@@ -69,7 +67,7 @@ export default function Record() {
                 <br/>
                 <p>Trasncription: {transcription}</p>
                 <p>GPT response: <br/>{gptRes}</p>
-                {gptRes.length ? null :<button style={{background:"yellow", borderRadius:0.5}} onClick={handleSpeakClick}>repeat</button>}
+                {!gptRes.length ? null : <button style={{background:"yellow", borderRadius:0.5}} onClick={handleSpeakClick}>repeat</button>}
             </center>
         </>
     )
