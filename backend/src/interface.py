@@ -7,18 +7,14 @@ CORS(app)
 
 @app.route('/')
 def landing():
-    return 'Hello, World!'
+    return 'This is the web service for the spot interface'
 
 @app.route("/gptanswer", methods=['POST'])
 def getAnswer():
     request_data = request.get_json()
-    prompt = request_data['question']
-    if len(prompt) == 0:
-        answer = 'The request was empty.'
-    elif checkPrompt(prompt):
-        answer = 'The request is under suspicion of being a prompt injection or jailbreak attack'
-    else:
-        answer = gptAnswer(request_data['question'])
+
+    answer = 'The request was empty.' if len(request_data['question']) == 0 else gptAnswer(request_data['question'], request_data['context'])
+
     return jsonify({"answer": answer})
 
 app.run()
