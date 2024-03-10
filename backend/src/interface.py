@@ -9,23 +9,12 @@ CORS(app)
 
 @app.route('/')
 def landing():
-    return 'Hello, World!'
+    return 'This is the web service for the spot interface'
 
 @app.route("/gptanswer", methods=['POST'])
 def getAnswer():
     request_data = request.get_json()
-    answer = 'The request was empty.' if len(request_data['question']) == 0 else gptAnswer(request_data['question'])
+    answer = 'The request was empty.' if len(request_data['question']) == 0 else gptAnswer(request_data['question'], request_data['context'])
     return jsonify({"answer": answer})
-
-# @app.route("/gptspeakanswer", methods=['GET', 'POST'])#deals with speech input
-# def getSpokenAnswer():
-#     if request.method == 'GET':
-#         return send_file(Path.cwd()/'backend'/'src'/'audio'/'audio.mp3', mimetype='audio/mp3')
-#     request_data = request.get_json()
-#     answer = gptAnswer(request_data['question'])
-#     speak(answer)
-#     return 'successfully created file'
-
-
 
 app.run()

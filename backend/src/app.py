@@ -2,7 +2,7 @@ from dotenv import dotenv_values
 import openai
 
 
-def gptAnswer(question):
+def gptAnswer(question, context):
     config = dotenv_values('.env')
     openai.api_key = config["GPT_KEY"]
 
@@ -11,7 +11,11 @@ def gptAnswer(question):
         "txt-img": "gpt-4-vision-preview"
     }
 
-    context = "we are inside the museum of natural history in NYC and you are currently helping a legally blind female user"
+    context = f"""
+                we are inside the museum of natural history in NYC and you are currently helping a legally blind female user additionally, 
+                this is the conversation history in a javascript list with objects of questions asked and answers you have generated: {context}. If asked about the history or 
+                context about the conversation please refer to this JSON, and only this.
+            """
 
     gpt_response = openai.chat.completions.create( #input transcribed text as GPT prompt
         model=models["text-only"],
